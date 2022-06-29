@@ -1,0 +1,21 @@
+include <iostream>
+
+using namespace std;
+
+int main(){
+	int a = 0, b = 1, c, termos;
+	
+	cout <<"quantidade de termos da fibonacci";
+	cin >>termos;
+	
+	cout <<"0 \n1 \n";
+	
+	for(int cont =0; cont <= termos; cont++){
+		c = a+b;
+		a = b; 
+		b = c;
+		
+		cout << c << "\n";
+	}
+	return 0;
+}
